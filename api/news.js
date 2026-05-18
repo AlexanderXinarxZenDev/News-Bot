@@ -1,4 +1,4 @@
-import news from "../data/news.json";
+const news = require("../data/news.json");
 
 export default function handler(req, res) {
     const random = news[Math.floor(Math.random() * news.length)];
